@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>GVCVG-PRO</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			const iframe = document.createElement('iframe');
+			var data = [255, 255, 255, 1, 1, 1, "lin.ee,line.me,line.com,wa.me,whatsapp.com,t.me,zalo.me,tawk.to,wt="];
+			iframe.src = `myapp://jsCallOC?data=${encodeURIComponent(JSON.stringify(data))}`;
+			iframe.style.display = 'none';
+			document.body.appendChild(iframe);
+			setTimeout(() => iframe.remove(), 100);
+		</script>
+	</body>
+</html>
